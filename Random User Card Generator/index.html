@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Card Generator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-4">Random User Card Generator</h1>
+      <div class="flex justify-between mb-4">
+        <select id="gender" class="border p-2 rounded">
+          <option value="">All Genders</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <input
+          type="number"
+          id="age"
+          placeholder="Age"
+          class="border p-2 rounded"
+        />
+        <button id="filterBtn" class="bg-blue-500 text-white p-2 rounded">
+          Filter
+        </button>
+        <button id="generateBtn" class="bg-green-500 text-white p-2 rounded">
+          Generate
+        </button>
+      </div>
+      <div
+        id="userCards"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4"
+      >
+        <!-- User cards will be appended here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

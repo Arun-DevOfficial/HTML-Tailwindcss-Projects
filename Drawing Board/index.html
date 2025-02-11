@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drawing Board</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="bg-white p-4 rounded shadow-lg">
+      <div class="flex justify-between mb-4">
+        <div>
+          <button
+            id="clearCanvas"
+            class="bg-red-500 text-white px-4 py-2 rounded"
+          >
+            Clear
+          </button>
+          <button
+            id="saveCanvas"
+            class="bg-green-500 text-white px-4 py-2 rounded"
+          >
+            Save
+          </button>
+        </div>
+        <div>
+          <input type="color" id="colorPicker" class="border rounded p-1" />
+        </div>
+      </div>
+      <canvas
+        id="drawingCanvas"
+        class="border"
+        width="800"
+        height="600"
+      ></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
